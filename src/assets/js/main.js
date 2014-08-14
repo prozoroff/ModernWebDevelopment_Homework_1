@@ -14,8 +14,9 @@ jQuery(function($)
             {
                 value.time = "Today " + date.toLocaleTimeString().slice(0,5);
             });
-            listContainer.show();
+            parentContainer.hide();
             parentContainer.html('').append(compiledTemplate(data.items));
+            parentContainer.slideDown();
         }).fail(function( jqxhr, textStatus, error ) {
             var err = textStatus + ", " + error;
             console.log( "Request Failed: " + err );
@@ -26,10 +27,9 @@ jQuery(function($)
 
     $('#submitBtn').on("click", function()
     {
-        $('#featured-product-carousel').slideUp('slow', function(){
-
-        });
-        listContainer.slideUp('slow', function(){
+        $('#featured-product-carousel').slideUp('slow', function(){});
+        listContainer.slideUp('slow', function()
+        {
             $.showItems($("#search-results-list"), "assets/data/search-results.json", listContainer);
         });
 
