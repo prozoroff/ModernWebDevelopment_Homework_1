@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89cbd923-1fbb-4c5b-a76d-dfae6ea43791" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/js/main.js" afterPath="$PROJECT_DIR$/src/assets/js/main.js" />
-    </list>
+    <list default="true" id="89cbd923-1fbb-4c5b-a76d-dfae6ea43791" name="Default" comment="" />
     <ignored path="ModernWebDevelopment_Homework_1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -485,12 +483,12 @@
       <changelist id="89cbd923-1fbb-4c5b-a76d-dfae6ea43791" name="Default" comment="" />
       <created>1408012606891</created>
       <updated>1408012606891</updated>
-      <workItem from="1408012613597" duration="9925000" />
+      <workItem from="1408012613597" duration="10097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9925000" />
+    <option name="totallyTimeSpent" value="10097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="91" y="22" width="1739" height="971" extended-state="0" />
