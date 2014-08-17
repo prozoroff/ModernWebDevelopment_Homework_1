@@ -4,6 +4,7 @@
     <title>Auction Homepage</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 <body>
@@ -103,68 +104,75 @@
         <!-- Search Results list with extra data  -->
         <script id="search-results-list" type="text/x-handlebars-template">
 
-            <div class="row">
+            <div class="row form-group" >
 
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 col-xs-12">
                     <h4>Product</h4>
-
-                    <input type="text" class="form-control" placeholder="Enter title">
-                    <br/>
-                    <div >
-                        <select class="form-control">
-                            <option></option>
-                            <option >Phones</option>
-                            <option >Tablets</option>
-                            <option >Watches</option>
-                            <option >Notebooks</option>
-                            <option >Desktops</option>
-                        </select>
+                    <div class="row">
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <p>
+                            <input type="text" class="form-control" placeholder="Product title">
+                        </p>
                     </div>
-
+                    <div class="col-md-12 col-sm-6 col-xs-12" >
+                        <p>
+                            <select class="form-control">
+                                <option></option>
+                                <option >Phones</option>
+                                <option >Tablets</option>
+                                <option >Watches</option>
+                                <option >Notebooks</option>
+                                <option >Desktops</option>
+                            </select>
+                        </p>
+                    </div>
+                    </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h4>Current Price</h4>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="input-group">
+                                <div class="input-group-addon">$</div>
+                                <input class="form-control" type="number" value="1000">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="input-group">
+                                <div class="input-group-addon">$</div>
+                                <input class="form-control" type="number" value="1500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <input class="form-control col-md-12 col-sm-12" type="range" placeholder="slider placeholder">
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
                     <h4>Max Auction Close Date</h4>
                     <input class="form-control" type="date" value="01.01.2014">
 
                     <br/>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-8 col-sm-8 col-xs-8 ">
                             <label class="control-label">Number of bids</label>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
                             <input type="number" class="form-control bfh-number" value="3">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <h4>Current Price</h4>
-                    <div class="row">
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <div class="input-group-addon">$</div>
-                                    <input class="form-control" type="number" value="1000">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <div class="input-group-addon">$</div>
-                                    <input class="form-control" type="number" value="1500">
-                                </div>
-                            </div>
-                    </div>
-
-                    <br/>
-
-                    <input class="form-control col-md-12" type="range" placeholder="slider placeholder">
-                </div>
 
             </div>
 
             <br/>
 
-            <button type="success" id="findBtn" class="btn btn-success col-md-4 col-md-offset-4">Find now</button>
+            <button type="success" id="findBtn" class="btn btn-success col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">Find now</button>
 
             <br/><br/><br/><br/>
 
